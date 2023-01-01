@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/inscription.css">
+</head>
+
+<body>
+    <div class="appConteneur">
+        <div class="conteneurForm">
+            <h2 style="color: white;">Sign Up</h2>
+            <form action="" class="form">
+
+                <div class="formInput">
+                    <label style="color: white;" for="fname">Username</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <span class="inputErrorMessage" id="usernameError"></span>
+                </div>
+
+                <div class="formInput">
+                    <label style="color: white;" for="femail">Email</label><br>
+                    <input type="email" id="femail" name="fname" class="formInput"><br>
+                    <span class="inputErrorMessage" id="emailError"></span>
+                </div>
+
+                <div class="formInput">
+                    <label style="color: white;" for="fpass">Password</label><br>
+                    <input type="password" id="fpass" name="fname" class="formInput"><br>
+                    <span class="inputErrorMessage" id="passError"></span>
+                </div>
+
+                <div class="formInput">
+                    <label style="color: white;" for="fconfirmpass">Confirm Password</label><br>
+                    <input type="password" id="fconfirmpass" name="fname" class="formInput"><br>
+                    <span class="inputErrorMessage" id="passConfirmError"></span>
+                </div>
+
+                <button type="button" onclick="onSignIn()"> Submit </button>
+
+            </form>
+        </div>
+        <div class="conteneurLogo">
+            <h1 style="font-size: 50px;">Benfaddoul Academy</h1>
+            <img src="../images/zencode.png" alt="zencoding" height="70%" , width="70%" />
+        </div>
+    </div>
+    <script src="../js/validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.courseOuterContainer {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    margin-bottom: 10px;
+}
+.courseContainer {
+    height: 300px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgb(7, 1, 12);
+}
+
+
+.courseContainer img {
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.courseContainer h3 {
+    color: white;
+}
+
+.courseContainer span {
+    color: goldenrod;
+    font-weight: bold;
+}

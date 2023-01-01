@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/homepage.css" rel="stylesheet">
+        <link href="../css/course.css" rel="stylesheet">
+    </head>
+    <body onload="displayRandomCourses(3)">
+
+        <div id="conteneurNav">
+            <img src="../images/logo.png" id="logo">
+            <nav>
+                <button onclick="location.href='./homepage.html'" type="button">Homepage</button>
+                <button onclick="location.href='../courses/courses.html'" type="button">Courses</button>
+                <button onclick="location.href='../about/about.html'" type="button">About</button>
+            </nav>
+        </div>
+
+        <div id="conteneurWall">
+            <div id="wall">
+                <h1>Eat(), Sleep(), Code(), Repeat()</h1>
+                <h2>While You Are Alive</h2>
+                <button onclick="location.href='../courses/courses.html'">Course List</button>
+            </div>
+        </div>
+
+        <div id="previewCoursesContainer">
+            <h1>/ Courses</h1>
+            <div id="coursesContainer">
+            </div>
+            <button onclick="location.href='../courses/courses.html'">See All Courses</button>
+        </div>
+        <script src="../js/courses.js"></script>
+    </body>
+</html>

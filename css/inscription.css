@@ -1,0 +1,139 @@
+body{
+    margin : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A272A;
+}
+
+.appConteneur {
+
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.conteneurForm{
+
+    width : 50%;
+    min-height : 70%;
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateX(25px);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}   
+
+.conteneurLogo{
+
+    width : 60%;
+    height : 80%;
+    transform: translateX(-25px);
+    z-index: -1;
+    background-color: goldenrod;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Brush Script MT'
+}
+
+
+.form{
+
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.formInput {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formInput input {
+
+    width: 90%;
+    height: 50px;
+    font-size: large;
+    border-radius: 10px;
+    border-width: 0px;
+    color: white;
+    background-color: rgb(34, 32, 32);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.formInput.error input {
+    outline: 2px solid red;
+    border-radius: 10px;
+}
+
+.formInput.success input {
+    outline: 2px solid green;
+    border-radius: 10px;
+}
+
+.formInput.success input {
+    border-color: green;
+}
+
+.formInput span{
+    color: red;
+    margin-bottom: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.form button {
+
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.form button:hover, button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.form button:active {
+  opacity: .5;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/courses.css" rel="stylesheet">
+    <link href="../css/course.css" rel="stylesheet">
+</head>
+
+<body onload="displayAllCourses(); setEventLister()">
+
+    <div id="conteneurNav">
+        <nav>
+            <button onclick="location.href='../homepage/homepage.html'" type="button">Homepage</button>
+            <button onclick="location.href='./courses.html'" type="button">Courses</button>
+            <button onclick="location.href='../about/about.html'" type="button">About</button>
+        </nav>
+    </div>
+
+    <div id="contentContainer">
+        <div id="filtersContainer">
+
+            <input type="text" placeholder="Search for a course" id="searchInput"/>
+
+
+            <h3>Categories</h3>
+            <button onclick="displayAllCourses()">All</button>
+            <button onclick="displayCategoryCourses('HTML')">HTML</button>
+            <button onclick="displayCategoryCourses('CSS')">CSS</button>
+            <button onclick="displayCategoryCourses('Java')">Java</button>
+            <button onclick="displayCategoryCourses('Javascript')">Javascript</button>
+            <button onclick="displayCategoryCourses('PHP')">PHP</button>
+            <h3>Categories</h3>
+
+
+            <input type="range" min="1" max="100" value="100" id="priceRange" onchange="displayPriceRangeCourses()">
+            <span id="priceRangeSpan"></span>
+
+        </div>
+        <div id="coursesContainer">
+
+        </div>
+    </div>
+
+
+    <script src="../js/courses.js"></script>
+</body>
+
+</html>
